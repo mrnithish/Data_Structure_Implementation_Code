@@ -1,6 +1,6 @@
 **********************************************Garbage Value retained need to find it**********************************************************************
 
-#include<stdio.h>
+ #include<stdio.h>
 #include<stdlib.h>
 typedef struct tnode* nn;
 int opt,x;
@@ -11,14 +11,14 @@ struct tnode{
     nn right;
 };
 nn insert(nn T,int x){
-    if(T==NULL)
+    if(T==NULL) 
     {
         nn T =malloc(sizeof(struct tnode));
         if(T!=NULL)
         {
         T->data=x;
         T->left=NULL;
-        T->right=NULL; 
+        T->right=NULL;
        // printf("%d is inserted",x);
             return T;
         }
@@ -37,7 +37,7 @@ nn insert(nn T,int x){
        // printf("%d is inserted in right",x);
             return T;
         }
-      
+
     }
 
     return T;
@@ -60,11 +60,26 @@ void inorder(nn T){
     inorder(T->right);
     }
 }
+void preorder(nn T){
+    if(T!=NULL){
+        printf("%d\t",T->data);
+        preorder(T->left);
+        preorder(T->right);
+    }
+}
+void postorder(nn T){
+    if(T!=NULL){
+    postorder(T->left);
+    postorder(T->right);
+    printf("%d\t",T->data);
+    }
+}
+
 void main(){
     while(1)
     {
     mainMenu:
-    printf("\nBinary Search Tree\n1.Insert\n2.Inorder\n3.MakeEmpty\n4.Exit\nEnter the option:");
+    printf("\nBinary Search Tree\n1.Insert\n2.Inorder\n3.MakeEmpty\n4.Preorder\n5.Postorder\n6.Exit\nEnter the option:");
     scanf("%d",&opt);
     switch(opt){
     case 1:
@@ -79,6 +94,12 @@ void main(){
     makeEmpty(T);
     break;
     case 4:
+    preorder(T);
+    break;
+    case 5:
+    postorder(T);
+    break;
+    case 6:
     exit(0);
     break;
     default:
