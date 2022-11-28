@@ -1,6 +1,6 @@
 **********************************************Garbage Value retained need to find it**********************************************************************
 
- #include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 typedef struct tnode* nn;
 int opt,x;
@@ -52,6 +52,24 @@ nn makeEmpty(nn T){
      printf("Tree is empty");
     return NULL;
 }
+void minimum(nn T){
+    if(T!=NULL)
+    {
+    while(T->left!=NULL){
+        T=T->left;
+    } 
+    printf("\nMinimum:%d",T->data);
+    }
+}
+void maximum(nn T){
+    if(T!=NULL)
+    {
+    while(T->right!=NULL){
+        T=T->right;
+    } 
+    printf("\nMaximum:%d",T->data);
+    }
+}
 void inorder(nn T){
     if(T!=NULL)
     {
@@ -74,36 +92,40 @@ void postorder(nn T){
     printf("%d\t",T->data);
     }
 }
-
+int option;
 void main(){
-    while(1)
+  do{
+        printf("\nBinary Search Tree\n1.Insert\n2.Inorder\n3.preorder\n4.Postorder\n5.Minimum\n6.Maximum\n7.Exit\nEnter the choice:");
+    scanf("%d",&option);
+    switch(option)
     {
-    mainMenu:
-    printf("\nBinary Search Tree\n1.Insert\n2.Inorder\n3.MakeEmpty\n4.Preorder\n5.Postorder\n6.Exit\nEnter the option:");
-    scanf("%d",&opt);
-    switch(opt){
-    case 1:
-    printf("\nEnter the element:");
-    scanf("%d",&x);
-    T=insert(T,x);
-    break;
-    case 2:
-    inorder(T);
-    break;
-    case 3:
-    makeEmpty(T);
-    break;
-    case 4:
-    preorder(T);
-    break;
-    case 5:
-    postorder(T);
-    break;
-    case 6:
-    exit(0);
-    break;
-    default:
-    printf("Invalid");
+        case 1:
+        printf("\nEnter the data:");
+        scanf("%d",&x);
+        T=insert(T,x);
+        break;
+        case 2:
+        printf("Inorder:");
+        inorder(T);
+        break;
+        case 3:
+        printf("Preorder:");
+        preorder(T);
+        break;
+        case 4:
+        printf("Postorder:");
+        postorder(T);
+        break;
+        case 5:
+        minimum(T);
+        break;
+        case 6:
+        maximum(T);
+        break;
+        case 7:
+        exit(0);
+        break;
     }
-    }
+    }while(2);
 }
+
