@@ -9,7 +9,6 @@ struct tnode{
     nn right;
     int ht;
 };
-
 int height(nn T)
 {
     int lh,rh;
@@ -67,7 +66,6 @@ nn  RR(nn T)
     T=rotateleft(T);
     return(T);
 }
-
 nn  LL(nn T)
 {
     T=rotateright(T);
@@ -85,7 +83,6 @@ nn  RL(nn T)
     T=rotateleft(T);
     return(T);
 }
-
 nn insert(nn T,int x)
 {
     if(T==NULL)
@@ -152,22 +149,43 @@ void main(){
         root=insert(root,x);
         break;
         case 2:
+        if(root!=NULL)
+        {
         printf("Inorder:");
         inorder(root);
+        }
+        else{
+            printf("Tree is empty");
+        }
+        
         break;
         case 3:
+        if(root!=NULL)
+        {
         printf("Preorder:");
         preorder(root);
+        }
+        else
+        {
+        printf("Tree is empty");
+        }
         break;
         case 4:
+        if(root!=NULL)
+        {
         printf("Postorder:");
         postorder(root);
+        }
+        else
+        {
+        printf("Tree is empty");
+        }
         break;
         case 5:
         exit(0);
         break;
         default:
-        printf("invalid..");
+        printf("Invalid..");
     }
   }while(23);
   
