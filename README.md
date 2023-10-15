@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the C source code for a data structure that performs various operations. The data structure is designed to [briefly describe its purpose or use case].
+This repository contains the C source code for a data structure that performs various operations.
 
 ## Features
 
@@ -20,14 +20,14 @@ This repository contains the C source code for a data structure that performs va
 
 
 # Avl Tree
-# Operations
+## Operations
        Insert
        Inorder
        Preorder
        Postorder
 # Binary Search Tree
 
-# Operations
+## Operations
       Insert
       Inorder
       Preorder
@@ -35,17 +35,17 @@ This repository contains the C source code for a data structure that performs va
       Minimum
       Maximum
 # Cirular Queue Array
-# Operations
+## Operations
       Enqueue
       Dequeue
       Display
 # Circular Queue Linked List
-# Operations
+## Operations
       Enqueue
       Dequeue
       Display
 # Doubly Linked List
-# Operations
+## Operations
       Insert
       Insert Position
       Delete
@@ -54,32 +54,35 @@ This repository contains the C source code for a data structure that performs va
       It gets the highest degree of the polynomial and then get the coeffiecent of the polynomial.
       It performs the polynomial addition.
 # Queue Array
-# Operations
+## Operations
       Enqueue
       Dequeue
       Display
 # Queue Linked List
-# Operations
+## Operations
       Enqueue
       Dequeue
       Display
 
 # Singly Linked List
-# Operations
+## Operations
       Insert
       Delete
       Display
       Delete List
 # Stack Array
-# Operations
+## Operations
       Push
       Pop
       Display
 # Stack Linked List
-# Operations
+## Operations
       Push
       Pop
       Display
+
+# To Clone
+      git clone 
 
 
 
