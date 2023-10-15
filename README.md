@@ -45,4 +45,37 @@
       Display
 # Polynomial Addition
       It gets the highest degree of the polynomial and then get the coeffiecent of the polynomial.
-  
+      It performs the polynomial addition.
+# Queue Array
+# Operations
+      Enqueue
+      Dequeue
+      Display
+# Queue Linked List
+# Operations
+      Enqueue
+      Dequeue
+      Display
+
+# Singly Linked List
+# Operations
+      Insert
+      Delete
+      Display
+      Delete List
+# Stack Array
+# Operations
+      Push
+      Pop
+      Display
+# Stack Linked List
+# Operations
+      Push
+      Pop
+      Display
+
+
+
+
+
+
