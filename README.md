@@ -1,4 +1,11 @@
-# Data_Structure_Implementation_Code
+# Data Structure in C
+
+## Overview
+
+This repository contains the C source code for a data structure that performs various operations. The data structure is designed to [briefly describe its purpose or use case].
+
+## Features
+
 1. AVL TREE
 2. Binary Search Tree
 3. Circular Queue Array
