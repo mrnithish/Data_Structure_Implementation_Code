@@ -10,3 +10,14 @@
 9. Singly Linked List
 10. Stack Array
 11. Stack Linked List
+
+
+# Avl Tree
+# Operations
+       Insert
+       Inorder
+       Preorder
+       Postorder
+# Binary Search Tree
+
+# Operations
