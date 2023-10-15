@@ -21,3 +21,28 @@
 # Binary Search Tree
 
 # Operations
+      Insert
+      Inorder
+      Preorder
+      Postorder
+      Minimum
+      Maximum
+# Cirular Queue Array
+# Operations
+      Enqueue
+      Dequeue
+      Display
+# Circular Queue Linked List
+# Operations
+      Enqueue
+      Dequeue
+      Display
+# Doubly Linked List
+# Operations
+      Insert
+      Insert Position
+      Delete
+      Display
+# Polynomial Addition
+      It gets the highest degree of the polynomial and then get the coeffiecent of the polynomial.
+  
